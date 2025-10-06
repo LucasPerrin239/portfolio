@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catégories</title>
+        <link rel="stylesheet" href="../css/2categories.css">
+        <link rel="icon" href="../img/favicon.png">
+    </head>
+
+    <body class="slide-in">
+        <div class="transition-overlay">
+            <a class="accueil" href="../index.html">Accueil</a>
+            <div id="container">
+                <a href="3crea.html" class="box crea"><p>Création Numérique</p></a>
+                <a href="3dev.html" class="box dev"><p>Développement Web</p></a>
+                <a href="3pp.html" class="box pp"><p>Projets Personnels</p></a>
+            </div>
+            <div class="about">
+                <a class="aboutLigne" href="3about.html"><p>About Me</p></a>
+            </div>
+
+            <div id="reseaux">
+                <div class="reseau-item">
+                    <a href="https://www.linkedin.com/in/lucas--perrin/"><img class="size" src="../img/linkedin.png" alt="Logo Linkedin"></a>
+                    <span class="info"><a class="style" target="_blank" href="https://www.linkedin.com/in/lucas--perrin/">lucas--perrin</a></span>
+                </div>
+                <div class="reseau-item">
+                    <a href="https://www.instagram.com/lucas_prrin/"><img class="size" src="../img/instagram.png" alt="Logo Instagram"></a>
+                    <span class="info"><a class="style" target="_blank" href="https://www.instagram.com/lucas_prrin/">lucas_prrin</a></span>
+                </div>
+                <div class="reseau-item2">
+                    <img class="size" src="../img/mail.png" alt="Enveloppe">
+                    <span class="info2">lucasperrin239@gmail.com</span>
+                </div>
+                <div class="reseau-item2">
+                    <img class="size" src="../img/telephone.png" alt="Telephone">
+                    <span class="info2">07 81 22 76 08</span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.endsWith('.html')) {
+            e.preventDefault();
+            document.body.classList.remove('slide-in');
+            document.body.classList.add('slide-out');
+            setTimeout(() => {
+                window.location.href = href;
+            }, 600);
+            }
+        });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            document.body.classList.add('slide-in');
+        }
+        });
+    </script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="css/1accueil.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+
+    <body class="slide-in">
+        <div class="transition-overlay">
+            <div class="main">
+                <div class="container">
+                    <div class="text-content">
+                        <h1>Lucas Perrin</h1>
+                        <p>Bienvenue ! Je m'appelle Lucas Perrin, j'ai 18 ans et je suis étudiant en MMI à l'IUT d'Elbeuf. Mon domaine de prédilection c'est la vidéo, mais ce n'est pas ma seule compétence : je vous laisse découvrir mes projets juste en dessous, prenez le temps de les apprécier !</p>
+                    </div>
+                    <div class="halo">
+                        <img src="img/moi.png" alt="Lucas Perrin de face">
+                    </div>
+                </div>
+            </div>
+
+            <a href="html/2categories.html"><img class="fleche" src="img/fleche.png" alt="Fleche blanche"></a>
+
+            <div id="reseaux">
+                <div class="reseau-item">
+                    <a href="https://www.linkedin.com/in/lucas--perrin/"><img class="size" src="img/linkedin.png" alt="Logo Linkedin"></a>
+                    <span class="info"><a class="style" target="_blank" href="https://www.linkedin.com/in/lucas--perrin/">lucas--perrin</a></span>
+                </div>
+                <div class="reseau-item">
+                    <a href="https://www.instagram.com/lucas_prrin/"><img class="size" src="img/instagram.png" alt="Logo Instagram"></a>
+                    <span class="info"><a class="style" target="_blank" href="https://www.instagram.com/lucas_prrin/">lucas_prrin</a></span>
+                </div>
+                <div class="reseau-item2">
+                    <img class="size" src="img/mail.png" alt="Enveloppe">
+                    <span class="info2">lucasperrin239@gmail.com</span>
+                </div>
+                <div class="reseau-item2">
+                    <img class="size" src="img/telephone.png" alt="Telephone">
+                    <span class="info2">07 81 22 76 08</span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.endsWith('.html')) {
+            e.preventDefault();
+            document.body.classList.remove('slide-in');
+            document.body.classList.add('slide-out');
+            setTimeout(() => {
+                window.location.href = href;
+            }, 600);
+            }
+        });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            document.body.classList.add('slide-in');
+        }
+        });
+    </script>
+
+
+
+</html>

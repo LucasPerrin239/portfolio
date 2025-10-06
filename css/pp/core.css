@@ -1,0 +1,318 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+@font-face {
+	font-family: 'titre';
+	src: url(../../txt/donutsking.otf);
+}
+
+@font-face {
+	font-family: 'texte';
+	src: url(../../txt/redhands.ttf);
+}
+
+
+
+
+
+/*MENU*/
+
+.accueil{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'titre';
+    font-size: 37px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+    left: 180px;
+}
+
+.accueil:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.projets{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'titre';
+    font-size: 37px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+    left: 400px;
+}
+
+.projets:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.apropos{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'titre';
+    font-size: 37px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+    left: 620px;
+}
+
+.apropos:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.fleche {
+    width: 80px;
+    position: fixed;
+    top: 25px;
+    left: 70px;
+}
+
+.fleche:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+/*RESEAUX SOCIAUX*/
+
+.size{
+    width: 90px;
+}
+
+span{
+    color: white;
+}
+
+#reseaux {
+  position: fixed;
+  bottom: 50px;
+  left: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.reseau-item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  background-color: transparent;
+  width: 90px;
+}
+
+.reseau-item:hover {
+  width: 250px;
+}
+
+.reseau-item .info {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  font-family: 'texte';
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.reseau-item:hover .info {
+  opacity: 1;
+}
+
+.reseau-item2 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  background-color: transparent;
+  width: 90px;
+}
+
+.reseau-item2:hover {
+  width: 390px;
+}
+
+.reseau-item2 .info2 {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  font-family: 'texte';
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.reseau-item2:hover .info2 {
+  opacity: 1;
+}
+
+.style:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.style:link{
+    color: white;
+    text-decoration: underline;
+}
+
+.style:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.style:active{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*FLECHE*/
+
+.flecheDown{
+    width: 200px;
+    position: fixed;
+    bottom: -20px;
+    right: 50px;
+}
+
+
+
+
+
+
+/*CONTENU DU MILIEU*/
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1500px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  flex: 2;
+  max-width: none;
+  
+}
+
+.titre {
+    font-family: 'titre';
+    font-size: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logos {
+        width: 100px;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+}
+
+.lesPhotos {
+    display: inline-block;
+    max-width: 800px;
+    padding-top: 50px;
+}
+
+.lesPhotos2 {
+    display: inline-block;
+    max-width: 700px;
+    padding-top: 10px;
+}
+
+.competences {
+    display: inline-block;
+}
+
+.atelierPhoto {
+    width: 350px;
+}
+
+.atelierPhoto2 {
+    margin: 5px;
+    width: 600px;
+    border-radius: 30px;
+}
+
+.atelierPhoto2:hover {
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.1);
+}
+
+p {
+    color: white;
+    font-family: 'texte';
+    font-size: 20px;
+    line-height:2;
+    span {
+        color: rgb(48, 205, 253);
+    }
+}
+
+.link:link {
+    color: rgb(48, 205, 253);
+}
+
+.link:hover {
+    color: blue;
+}
+
+.link:visited {
+    color: rgb(48, 205, 253);
+}
+
+.link:active {
+    color: rgb(48, 205, 253);
+}

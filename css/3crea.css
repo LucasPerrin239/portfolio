@@ -1,0 +1,316 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+@font-face {
+	font-family: 'titre';
+	src: url(../txt/donutsking.otf);
+}
+
+@font-face {
+	font-family: 'texte';
+	src: url(../txt/redhands.ttf);
+}
+
+
+
+
+
+/*MENU*/
+
+.accueil{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'titre';
+    font-size: 37px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+    left: 180px;
+}
+
+.accueil:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.projets{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'titre';
+    font-size: 37px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+    left: 400px;
+}
+
+.projets:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.apropos{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'titre';
+    font-size: 37px;
+    text-align: center;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    top: 40px;
+    left: 620px;
+}
+
+.apropos:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.fleche {
+    width: 80px;
+    position: fixed;
+    top: 25px;
+    left: 70px;
+}
+
+.fleche:hover{
+    cursor: pointer;
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+/*RESEAUX SOCIAUX*/
+
+.size{
+    width: 90px;
+}
+
+span{
+    color: white;
+}
+
+#reseaux {
+  position: fixed;
+  bottom: 50px;
+  left: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.reseau-item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  background-color: transparent;
+  width: 90px;
+}
+
+.reseau-item:hover {
+  width: 250px;
+}
+
+.reseau-item .info {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  font-family: 'texte';
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.reseau-item:hover .info {
+  opacity: 1;
+}
+
+.reseau-item2 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  background-color: transparent;
+  width: 90px;
+}
+
+.reseau-item2:hover {
+  width: 390px;
+}
+
+.reseau-item2 .info2 {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  font-family: 'texte';
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.reseau-item2:hover .info2 {
+  opacity: 1;
+}
+
+.style:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.style:link{
+    color: white;
+    text-decoration: underline;
+}
+
+.style:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.style:active{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/*CONTENU DU MILIEU*/
+
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 260px;
+    gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.ecolosAnonymes {
+    background: url("../img/lesEcolosAnonymes.png");
+    background-size: 180%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.marlowe {
+    background: url("../img/marlowe.png");
+    background-size: 180%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.aufildElbeuf {
+    background: url("../img/aufildElbeuf.jpg");
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.atelierPhoto {
+    background: url("../img/atelierPhoto.jpg");
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.bikeRepair {
+    background: url("../img/bikeRepair.png");
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.productionGraphique {
+    background: url("../img/prodGraphique.jpg");
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.ticolasExperience {
+    background: url("../img/ticolasExperience.png");
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+/*TRANSITION ENTRE PAGES*/
+
+body {
+  overflow-x: hidden;
+}
+
+.transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: left 0.6s ease;
+}
+
+body.slide-in .transition-overlay {
+  left: 0;
+  animation: slideIn 0.6s forwards;
+}
+
+@keyframes slideIn {
+  from { left: 100%; }
+  to { left: 0; }
+}
+
+body.slide-out .transition-overlay {
+  left: 0;
+  animation: slideOut 0.6s forwards;
+}
+
+@keyframes slideOut {
+  from { left: 0; }
+  to { left: -100%; }
+}
