@@ -134,12 +134,14 @@ span{
 .reseau-item .info {
   white-space: nowrap;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
   margin-left: 10px;
-  color: white;
   font-family: 'texte';
   font-size: 18px;
   transition: opacity 0.3s ease;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .reseau-item:hover .info {
@@ -164,10 +166,13 @@ span{
   overflow: hidden;
   opacity: 0;
   margin-left: 10px;
-  color: white;
+  color: black;
   font-family: 'texte';
   font-size: 18px;
   transition: opacity 0.3s ease;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .reseau-item2:hover .info2 {
@@ -180,17 +185,17 @@ span{
 }
 
 .style:link{
-    color: white;
+    color: black;
     text-decoration: underline;
 }
 
 .style:visited{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .style:active{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
