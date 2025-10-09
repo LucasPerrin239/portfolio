@@ -209,6 +209,7 @@ span{
 }
 
 .container {
+	padding-top:100px;
   display: flex;
   flex-direction: row; 
   justify-content: center;
