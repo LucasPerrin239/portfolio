@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Développement Web</title>
+        <link rel="stylesheet" href="../css/3dev.css">
+        <link rel="icon" href="../img/favicon.png">
+    </head>
+
+    <body>
+        <div class="container-menu">
+            <div class="btn">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="./2categories.html">Catégories</a></li>
+                    <li><a href="./3crea.html">Création Numérique</a></li>
+                    <li><a href="./3dev.html">Développement Web</a></li>
+                    <li><a href="./3pp.html">Projets Personnels</a></li>
+                    <li><a href="./3about.html">About</a></li>
+                </ul>
+            </div>
+        </div>  
+
+        <div id="container">
+            <a href="dev/le106.html" class="box le106"></a>
+            <a href="dev/portfolio.html" class="box portfolio"></a>
+            <a href="dev/pizzaJeanMi.html" class="box pizzaJeanMi"></a>
+        </div>
+
+        <div id="reseaux">
+            <div class="reseau-item">
+                <a href="https://www.linkedin.com/in/lucas--perrin/"><img class="size" src="../img/linkedin.png" alt="Logo Linkedin"></a>
+                <span class="info"><a class="style" target="_blank" href="https://www.linkedin.com/in/lucas--perrin/">lucas--perrin</a></span>
+            </div>
+            <div class="reseau-item">
+                <a href="https://www.instagram.com/lucas_prrin/"><img class="size" src="../img/instagram.png" alt="Logo Instagram"></a>
+                <span class="info"><a class="style" target="_blank" href="https://www.instagram.com/lucas_prrin/">lucas_prrin</a></span>
+            </div>
+            <div class="reseau-item2">
+                <a href="mailto:lucasperrin239@gmail.com"><img class="size" src="../img/mail.png" alt="Enveloppe"></a>
+                <span class="info2"><a class="style" href="mailto:lucasperrin239@gmail.com">lucasperrin239@gmail.com</a></span>
+            </div>
+            <div class="reseau-item2">
+                <a href="tel:+33781227608"><img class="size" src="../img/telephone.png" alt="Telephone"></a>
+                <span class="info2"><a class="style" href="tel:+33781227608">07 81 22 76 08</a></span>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+            this.classList.toggle("close-btn");
+            
+            const menu = document.querySelector(".menu");
+            const containerMenu = document.querySelector(".container-menu");
+
+            menu.classList.toggle("open-menu");
+            containerMenu.classList.toggle("open-menu");
+
+            document.body.classList.toggle("no-scroll");
+        });
+    </script>
+
+</html>
