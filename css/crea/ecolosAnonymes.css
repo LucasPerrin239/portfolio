@@ -1,0 +1,361 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+@font-face {
+	font-family: 'titre';
+	src: url(../../txt/donutsking.otf);
+}
+
+@font-face {
+	font-family: 'texte';
+	src: url(../../txt/redhands.ttf);
+}
+
+
+
+
+
+/*MENU*/
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container-menu {
+    width: 100%;
+    height: auto;
+    transition: height 0.3s ease;
+}
+
+.container-menu.open-menu {
+    height: 100vh;
+}
+
+.btn
+{
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  padding: 16px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.btn .bar1, .btn .bar2, .btn .bar3
+{
+  height: 4px;
+  width: 100%;
+  display: block;
+  background: white;
+}
+
+.close-btn
+{
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.close-btn .bar1
+{
+  transform: rotate(-130deg);
+  height: 4px;
+  width: 90%;
+  display: block;
+  background: #000000;
+  position: absolute;
+}
+
+.close-btn .bar2
+{
+  display: none;
+}
+
+.close-btn .bar3
+{
+  transform: rotateZ(130deg);
+  height: 4px;
+  width: 90%;
+  display: block;
+  background: #000;
+  position: absolute;
+}
+
+.menu
+{
+  display: none;
+}
+
+.open-menu
+{
+  width: 100%;
+  height: 100vh;
+  background: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 5s all;
+}
+
+.open-menu ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.open-menu ul li
+{
+  list-style: none;
+  padding: 6px;
+}
+
+.open-menu ul li a
+{
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: 800;
+  font-family: 'texte';
+  color: black;
+}
+
+.open-menu ul li a:hover
+{
+  border-bottom: 8px solid #000;
+  transition: 0.2s all;
+}
+
+/*RESEAUX SOCIAUX*/
+
+.size{
+    width: 90px;
+}
+
+span{
+    color: white;
+}
+
+#reseaux {
+  position: fixed;
+  bottom: 50px;
+  left: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.reseau-item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  background-color: transparent;
+  width: 90px;
+}
+
+.reseau-item:hover {
+  width: 250px;
+}
+
+.reseau-item .info {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  font-family: 'texte';
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.reseau-item:hover .info {
+  opacity: 1;
+}
+
+.reseau-item2 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  background-color: transparent;
+  width: 90px;
+}
+
+.reseau-item2:hover {
+  width: 390px;
+}
+
+.reseau-item2 .info2 {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  font-family: 'texte';
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+}
+
+.reseau-item2:hover .info2 {
+  opacity: 1;
+}
+
+.style:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.style:link{
+    color: white;
+    text-decoration: underline;
+}
+
+.style:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.style:active{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/*CONTENU DU MILIEU*/
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1500px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  flex: 2;
+  max-width: none;
+}
+
+.content {
+  margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logos {
+        width: 100px;
+        margin-top: 50px;
+    }
+}
+
+p {
+    color: white;
+    font-family: 'texte';
+    font-size: 20px;
+    line-height: 1.8;
+    span {
+        color: rgb(48, 205, 253);
+    }
+}
+
+iframe {
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px){
+  .btn{height: 20px; width: 20px;}
+  .btn .bar1, .btn .bar2, .btn .bar3{height: 2px;}
+  .close-btn .bar1, .close-btn .bar3{width: 50%;}
+  .open-menu ul li a{font-size: 5vw;}
+  .open-menu ul li a:hover{border-bottom: none; transition: none;}
+
+  .main{padding-top: 60px;}
+  .container{flex-direction: column-reverse; align-items: center; padding-top: 0px; gap: 30px;}
+  iframe{width: 300px; height: 168px; box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.6); border-radius: 15px;}
+  .content .logos{width: 50px; margin: 25px 3px 0px 0px}
+  .text-content{max-width: 85%;}
+  p{font-size: 10px;}
+
+  .size{width: 50px;}
+  #reseaux {position: static; margin: 30px 0px 20px 0px; gap: 8px; display: flex; flex-direction: row; justify-content: center;}
+  .reseau-item, .reseau-item2 {width: 50px; transition: none;}
+  .reseau-item:hover,.reseau-item2:hover{width: 50px; transition: none;}
+}
+
+@media screen and (min-width:481px) and (max-width:1024px){
+  .btn{height: 40px; width: 40px;}
+  .btn .bar1, .btn .bar2, .btn .bar3{height: 3px;}
+  .close-btn .bar1, .close-btn .bar3{width: 60%;}
+  .open-menu ul li a{font-size: 3vw;}
+  .open-menu ul li a:hover{border-bottom: none; transition: none;}
+
+  .main{padding-top: 0px; min-height: 95vh;}
+  .container{max-width: 90%; gap: 50px; padding-top: 0px;}
+  .text-content{max-width: 50%;}
+  .content{max-width: 35%; margin: 0px;}
+  p{font-size: 10px; margin: 0px;}
+  iframe{width: 325px; height: 183px; box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.6); border-radius: 15px;}
+  .content .logos{width: 50px; margin: 25px 3px 0px 0px};
+
+  .size{width: 60px;}
+  #reseaux{gap: 5px; left: 30px; bottom: 20px;}
+  .reseau-item, .reseau-item2 {width: 60px; transition: none;}
+  .reseau-item:hover,.reseau-item2:hover{width: 60px; transition: none;}
+}
+
+@media screen and (min-width:1025px) and (max-width:1366px){
+  .btn{height: 45px; width: 45px;}
+  .btn .bar1, .btn .bar2, .btn .bar3{height: 4px;}
+  .close-btn .bar1, .close-btn .bar3{width: 65%;}
+  .open-menu ul li a{font-size: 2.5vw;}
+
+  .main{padding: 0px 0px 0px 0px; min-height: 95vh;}
+  .container{max-width: 90%; gap: 50px; padding-top: 0px;}
+  .text-content{max-width: 55%;}
+  .content{max-width: 35%; margin: 0px;}
+  p{font-size: 15px; margin: 0px;}
+  iframe{width: 450px; height: 253px; box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.6); border-radius: 15px;}
+  .content .logos{width: 70px; margin: 30px 5px 0px 0px};
+ 
+  .size{width: 65px;}
+  #reseaux{gap: 0px; left: 30px; bottom: 20px;}
+  .reseau-item .info, .reseau-item2 .info2{font-size: 15px;}
+}
