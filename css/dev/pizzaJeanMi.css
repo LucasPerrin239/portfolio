@@ -178,7 +178,7 @@ span{
   overflow: hidden;
   transition: width 0.4s ease;
   background-color: transparent;
-  width: 70px;
+  width: 90px;
 }
 
 .reseau-item:hover {
@@ -206,7 +206,7 @@ span{
   overflow: hidden;
   transition: width 0.4s ease;
   background-color: transparent;
-  width: 790px;
+  width: 90px;
 }
 
 .reseau-item2:hover {
@@ -393,4 +393,5 @@ video {
   .size{width: 65px;}
   #reseaux{gap: 0px; left: 30px; bottom: 20px;}
   .reseau-item .info, .reseau-item2 .info2{font-size: 15px;}
+
 }
