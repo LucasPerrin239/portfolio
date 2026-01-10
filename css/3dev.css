@@ -289,6 +289,13 @@ span{
     box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
+.dashboard{
+  background: url("../img/dashboard.jpg");
+  background-size: 100%;
+  background-position: center;
+  box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
 .portfolio {
     background: url("../img/faviconBlanc.png");
     background-size: 100%;
@@ -318,6 +325,7 @@ span{
   .box{height: 180px; width: 180px; border-radius: 22px;}
   .box:hover{transform: none; transition: none;}
   .le106{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
+  .dashboard{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .portfolio{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .pizzaJeanMi{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
 
@@ -338,6 +346,7 @@ span{
   .box{height: 150px; width: 150px; border-radius: 18px;}
   .box:hover{transform: none; transition: none;}
   .le106{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
+  .dashboard{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .portfolio{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .pizzaJeanMi{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
 
@@ -356,6 +365,7 @@ span{
   #container{gap: 15px; width: 70%; padding-top: 200px;}
   .box{height: 200px; width: 200px; border-radius: 22px;}
   .le106{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
+  .dashboard{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .portfolio{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .pizzaJeanMi{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
 
