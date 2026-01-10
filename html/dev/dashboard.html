@@ -1,0 +1,89 @@
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard météo</title>
+        <link rel="stylesheet" href="../../css/dev/dashboard.css">
+        <link rel="icon" href="../../img/favicon.png">
+    </head>
+
+    <body>
+        
+        <div class="container-menu">
+                <div class="btn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                
+                <div class="menu">
+                    <ul>
+                        <li><a href="../../index.html">Accueil</a></li>
+                        <li><a href="../2categories.html">Catégories</a></li>
+                        <li><a href="../3crea.html">Création Numérique</a></li>
+                        <li><a href="../3dev.html">Développement Web</a></li>
+                        <li><a href="../3pp.html">Projets Personnels</a></li>
+                        <li><a href="../3about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="main">
+            <div class="container">
+                <div class="text-content">
+                    <p>Dans le cadre d'un projet de fin d'année, nous avions pour objectif de <span>créer un tableau de bord météo</span>. Avec la base données qui nous était fournie, nous devions <span>sélectionner les informations pertinentes</span> à visualiser pour informer les utilisateurs sur la météo du département.<br>
+                    <br>L'objectif était de manipuler le langage <span>MySQL</span> ainsi que <span>php</span> pour récupérer et manipuler les données, puis ensuite les intégrer dans des <span>graphiques</span> grâce à du <span>javascript</span>, afin de le visualiser sur la page pour l'utilisateur.<br>
+                    Nous pouvions également rendre la page <span>interactive</span> , ce qui est le cas car on peut choisir les données à visualiser. C'est-à-dire la ville, l'intervalle de date, ou bien la saison.<br>
+                    <br>(Cette page n'avait pas pour but d'être responsive, il est donc mieux de la visiter sur PC)<br>
+                    <br>Pour accéder à ce site web, vous pouvez cliquer sur ce lien : <a class="link" target="_blank" href="https://perrilu5.tpweb.univ-rouen.fr/dashboard">Dashboard météo du Loiret</a></p>
+                    </p>
+                </div>
+                <div class="content">
+                    <img class="dashboardAccueil" src="../../img/dashboardAccueil.png" alt="Page d'Accueil du site">
+                    <div class="competences">
+                        <img class="logos" src="../../img/VisualStudioCode.png" alt="Logo de Visual_Studio_Code">
+                        <img class="logos" src="../../img/html5.png" alt="Logo HTML5">
+                        <img class="logos" src="../../img/css3.png" alt="Logo CSS3">
+                        <img class="logos" src="../../img/php.png" alt="Logo PHP">
+                        <img class="logos" src="../../img/mySQL.png" alt="Logo MySQL">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reseaux">
+            <div class="reseau-item">
+                <a href="https://www.linkedin.com/in/lucas--perrin/"><img class="size" src="../../img/linkedin.png" alt="Logo Linkedin"></a>
+                <span class="info"><a class="style" target="_blank" href="https://www.linkedin.com/in/lucas--perrin/">lucas--perrin</a></span>
+            </div>
+            <div class="reseau-item">
+                <a href="https://www.instagram.com/lucas_prrin/"><img class="size" src="../../img/instagram.png" alt="Logo Instagram"></a>
+                <span class="info"><a class="style" target="_blank" href="https://www.instagram.com/lucas_prrin/">lucas_prrin</a></span>
+            </div>
+            <div class="reseau-item2">
+                <a href="mailto:lucasperrin239@gmail.com"><img class="size" src="../../img/mail.png" alt="Enveloppe"></a>
+                <span class="info2"><a class="style" href="mailto:lucasperrin239@gmail.com">lucasperrin239@gmail.com</a></span>
+            </div>
+            <div class="reseau-item2">
+                <a href="tel:+33781227608"><img class="size" src="../../img/telephone.png" alt="Telephone"></a>
+                <span class="info2"><a class="style" href="tel:+33781227608">07 81 22 76 08</a></span>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+            this.classList.toggle("close-btn");
+            
+            const menu = document.querySelector(".menu");
+            const containerMenu = document.querySelector(".container-menu");
+
+            menu.classList.toggle("open-menu");
+            containerMenu.classList.toggle("open-menu");
+
+            document.body.classList.toggle("no-scroll");
+        });
+    </script>
+
+</html>
