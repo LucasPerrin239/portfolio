@@ -259,7 +259,7 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .container {
@@ -376,4 +376,5 @@ iframe {
   .size{width: 65px;}
   #reseaux{gap: 0px; left: 30px; bottom: 20px;}
   .reseau-item .info, .reseau-item2 .info2{font-size: 15px;}
+
 }
