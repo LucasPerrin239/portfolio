@@ -289,6 +289,13 @@ span{
   box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
+.crescendo {
+  background: url("../img/crescendo.png");
+  background-size: 180%;
+  background-position: center;
+  box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
 .mss{
   background: url("../img/mss.png");
   background-size: 100%;
@@ -358,6 +365,7 @@ span{
   .box{height: 180px; width: 180px; border-radius: 22px;}
   .box:hover{transform: none; transition: none;}
   .richardPatry{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
+  .crescendo{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .ecolosAnonymes{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .marlowe{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .mss{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
@@ -384,6 +392,7 @@ span{
   .box{height: 150px; width: 150px; border-radius: 18px;}
   .box:hover{transform: none; transition: none;}
   .richardPatry{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
+  .crescendo{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .ecolosAnonymes{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .marlowe{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .mss{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
@@ -408,6 +417,7 @@ span{
   #container{gap: 15px; width: 70%; padding: 100px 0px 50px 0px;}
   .box{height: 200px; width: 200px; border-radius: 22px;}
   .richardPatry{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
+  .crescendo{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .ecolosAnonymes{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .marlowe{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .mss{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
