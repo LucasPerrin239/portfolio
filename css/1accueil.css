@@ -213,7 +213,7 @@ span{
   .main{height: 50vh;}
   .size{width: 40px;}
   #reseaux {left:auto; bottom: 150px; gap: 5px; display: flex; flex-direction: column; align-items:center; justify-content: center;}
-  .reseau-item, .reseau-item2 {width: 240px; transition: none;}
+  .reseau-item, .reseau-item2 {width: 200px; transition: none;}
   .reseau-item:hover,.reseau-item2:hover{width: 240px; transition: none;}
   .reseau-item .info,.reseau-item2 .info2 {white-space: nowrap; margin-left: 10px; color: white; font-family: 'texte'; font-size: 10px; opacity: 1; transition: none;}
   .fleche{width: 50px; position: fixed; bottom: 70px; left: 50%; transform: translateX(-50%);}
@@ -239,4 +239,5 @@ span{
   .reseau-item:hover {width: 210px;}
   .reseau-item2:hover {width: 320px;}
   .fleche{width: 80px;}
+
 }
