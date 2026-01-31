@@ -260,11 +260,9 @@ span{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 70px;
 }
 
 .container {
-    padding-top: 100px;
   display: flex;
   flex-direction: row; 
   justify-content: center;
@@ -405,3 +403,4 @@ video {
   #reseaux{gap: 0px; left: 30px; bottom: 20px;}
   .reseau-item .info, .reseau-item2 .info2{font-size: 15px;}
 }
+
