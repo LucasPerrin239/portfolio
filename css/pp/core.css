@@ -154,6 +154,17 @@ body.no-scroll {
   transition: 0.2s all;
 }
 
+.flecheBack{
+  width: 80px;
+  padding: 16px 0px 0px 30px;
+}
+
+.flecheBack:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 /*RESEAUX SOCIAUX*/
 
 .size{
@@ -281,8 +292,8 @@ hr{visibility: hidden;}
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding-top: 100px;
+  min-height: 90vh;
+  padding-top: 0px;
 }
 
 .container {
@@ -392,6 +403,7 @@ p {
   .close-btn .bar1, .close-btn .bar3{width: 50%;}
   .open-menu ul li a{font-size: 5vw;}
   .open-menu ul li a:hover{border-bottom: none; transition: none;}
+  .flecheBack{width: 30px; padding: 10px 0px 0px 20px;}
 
   .main{padding-top:50px;}
   .container{flex-direction: column; align-items: center; padding-top: 0px;}
@@ -422,6 +434,7 @@ p {
   .close-btn .bar1, .close-btn .bar3{width: 60%;}
   .open-menu ul li a{font-size: 3vw;}
   .open-menu ul li a:hover{border-bottom: none; transition: none;}
+  .flecheBack{width: 50px;}
 
   .main{padding-top: 50px; min-height: 95vh;}
   .container{max-width: 80%; gap: 20px; padding-top: 0px;}
@@ -451,6 +464,7 @@ p {
   .btn .bar1, .btn .bar2, .btn .bar3{height: 4px;}
   .close-btn .bar1, .close-btn .bar3{width: 65%;}
   .open-menu ul li a{font-size: 2.5vw;}
+  .flecheBack{width: 60px;}
 
   .main{padding-top: 70px; min-height: 95vh;}
   .container{max-width: 90%; gap: 30px; padding-top: 0px;}
