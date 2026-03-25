@@ -156,6 +156,17 @@ body.no-scroll {
   transition: 0.2s all;
 }
 
+.flecheBack{
+  width: 80px;
+  padding: 16px 0px 0px 30px;
+}
+
+.flecheBack:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 
 
 /*CONTENU DU MILIEU*/
@@ -165,7 +176,7 @@ body.no-scroll {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 50px;
     gap: 20px;
 }
 
@@ -393,8 +404,9 @@ span{
   .close-btn .bar1, .close-btn .bar3{width: 50%;}
   .open-menu ul li a{font-size: 5vw;}
   .open-menu ul li a:hover{border-bottom: none; transition: none;}
+  .flecheBack{width: 30px; padding: 10px 0px 0px 20px;}
 
-  #container{flex-direction: column; padding-top: 50px; gap: 10px;}
+  #container{flex-direction: column; padding-top: 30px; gap: 10px;}
   .box, .about{height: 250px; width: 200px; border-radius: 25px; margin-bottom: 10px; box-shadow: 6px 5px 20px rgba(255, 255, 255, 0.6);}
   .box:hover{transform: none; transition: none;}
   .about{background-size: 400%; margin-top: 10px;}
@@ -417,6 +429,7 @@ span{
   .close-btn .bar1, .close-btn .bar3{width: 60%;}
   .open-menu ul li a{font-size: 3vw;}
   .open-menu ul li a:hover{border-bottom: none; transition: none;}
+  .flecheBack{width: 50px;}
 
   #container{padding-top: 60px;}
   .box{height:250px; width: 180px; border-radius: 24px; box-shadow: 4px 6px 20px rgba(255, 255, 255, 0.6);}
@@ -440,8 +453,9 @@ span{
   .btn .bar1, .btn .bar2, .btn .bar3{height: 4px;}
   .close-btn .bar1, .close-btn .bar3{width: 65%;}
   .open-menu ul li a{font-size: 2.5vw;}
+  .flecheBack{width: 60px;}
 
-  #container{padding-top: 90px;}
+  #container{padding-top: 80px;}
   .box{height:280px; width: 200px; border-radius: 25px; box-shadow: 4px 6px 20px rgba(255, 255, 255, 0.6);}
   .about{height: 120px; width: 640px; border-radius: 25px; box-shadow: 4px 6px 20px rgba(255, 255, 255, 0.6);}
   .crea,.pp{background-size: 210%;}
