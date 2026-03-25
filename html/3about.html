@@ -29,6 +29,10 @@
                     </ul>
                 </div>
             </div>
+            <a href="./2categories.html"><img class="flecheBack" src="../img/flecheBack.png" alt="Flèche de retour en arrière"></a>
+
+            <img class="flecheDown" src="../../img/flecheDown.png" alt="Fleche blanche">
+
 
             <!-- TEXTE ABOUT -->
 
@@ -42,9 +46,10 @@
                         <p>- Août 2023 : Stage chez <span>Komeo Creation</span> afin de m'aiguiller pour mon orientation post-bac.</p>
                         <p>- Novembre 2023 : Lancement de mon <span>projet vidéo sur le rap</span> (RapstorVideos), pour m'améliorer et acquérir de nouvelles compétences.</p>
                         <p>- Septembre 2024 : Début de mon cursus en <span>BUT Métiers du Multimédia et de l'Internet à l'IUT d'Elbeuf</span>. Études qui confirment mon envie de travailler dans le domaine du <span>graphisme</span> et de <span>l'audiovisuel</span>.</p>         
-                        <p>- Août 2025 : Intégration au sein du <span>pôle communication</span> du CORE Basketball à Elbeuf. Opportunité qui me permet de développer mes <span>compétences en commmunication</span>.</p>                        
+                        <p>- Août 2025 : Intégration au sein du <span>pôle communication</span> du CORE Basketball à Elbeuf. Opportunité qui me permet de développer mes <span>compétences en commmunication</span>.</p>
+                        <p>- Avril à juin 2026 : <span>Stage</span> au sein du pôle communication de la mairie de Caudebec-lès-Elbeuf. <span>Expérience</span> qui m'a permis de m'insérer petit à petit dans le monde professionnel.</p>                        
                         <p>N'hésitez pas à me contacter si vous avez une demande !</p>
-                        <p>Vous pouvez également télécharger mon <a class="link" target="_blank" href="../pdf/cvFR.pdf" download="CV Lucas Perrin (français)">CV en français</a> ainsi que mon <a class="link" target="_blank" href="../pdf/cvANG.pdf" download="CV Lucas Perrin (anglais)">CV en anglais</a>.</p>
+                        <p>Vous pouvez également télécharger mon <a class="link" target="_blank" href="../pdf/cvFR.pdf" download="CV Lucas Perrin (français)">CV.</a></p>
                     </div>
                     <div class="content">
                         <div class="lesPhotos">
@@ -75,6 +80,7 @@
                             </p>
                             <p>
                                 <label for="message">Votre demande :</label>
+                                <br>
                                 <textarea name="message" id="message" required placeholder="Détails de la demande" cols="60" rows="10"></textarea>
                             </p>
                             <p>
@@ -135,5 +141,21 @@
         });
     </script>
 
-</html>
+    
+    <!-- FLÈCHE DOWN -->
+    <script>
+        const fleche = document.querySelector('.flecheDown');
 
+        fleche.addEventListener('click', () => {
+            const mains = [...document.querySelectorAll('.main2')];
+            const currentScroll = window.scrollY;
+
+            const next = mains.find(m => m.offsetTop > currentScroll + 10);
+
+            if (next){
+                next.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+
+</html>
