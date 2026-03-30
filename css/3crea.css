@@ -314,6 +314,13 @@ span{
     box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
+.becreative {
+    background: url("../img/becreative.jpg");
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
 .mss{
   background: url("../img/mss.png");
   background-size: 100%;
