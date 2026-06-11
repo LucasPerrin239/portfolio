@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mairie Caudebec-lès-Elbeuf</title>
+        <link rel="stylesheet" href="../../css/crea/caudebec.css">
+        <link rel="icon" href="../../img/favicon.png">
+    </head>
+
+    <body>
+        
+        <div class="container-menu">
+                <div class="btn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                
+                <div class="menu">
+                    <ul>
+                        <li><a href="../../index.html">Accueil</a></li>
+                        <li><a href="../2categories.html">Catégories</a></li>
+                        <li><a href="../3crea.html">Création Numérique</a></li>
+                        <li><a href="../3dev.html">Développement Web</a></li>
+                        <li><a href="../3pp.html">Projets Personnels</a></li>
+                        <li><a href="../3about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../3crea.html"><img class="flecheBack" src="../../img/flecheBack.png" alt="Flèche de retour en arrière"></a>
+
+
+        <img class="flecheDown" src="../../img/flecheDown.png" alt="Fleche blanche">
+
+        
+
+        <!-- PRESENTATION -->
+
+        <div class="main">
+            <div class="container first">
+                <div class="text-content">
+                    <p>Lors de ma deuxième année en MMI, j'ai eu la chance de réaliser un <span>stage</span> au sein du <span>service communication</span> de la Mairie de Caudebec-lès-Elbeuf.</p>
+                    <p>Cette expérience m'a permis de commencer à m'intégrer au monde professionnel de la <span>communication digitale</span> et d'en comprendre certains enjeux. L'enjeu était de transposer ce que j'ai appris durant ma formation, dans une <span>situation professionnelle</span> concrète.</p>
+                    <p>J'ai pu participer à plusieurs projets et on m'a confié plusieurs tâches plus ou moins complexes que ce soit en <span>graphisme</span> ou bien en <span>audiovisuel</span>.</p>
+                    <p>Ce stage de deux mois m'a également permis de m'aiguiller concernant mon avenir professionnel, et ainsi, m'aider à savoir dans quel domaine ou institutions je souhaite évoluer.</p>
+                    <p>Si vous allez sur les <span>réseaux sociaux de la Mairie de Caudebec-lès-Elbeuf</span>, en cliquant sur les différentes images à droite, vous pourrez observer tout le travail réalisé par le reste du service communication.</p>
+                </div>
+                <div class="content">
+                    <div class="lesPhotos2">
+                        <a target="_blank" href="https://www.facebook.com/caudebecleselbeuf/"><img class="atelierPhoto2" src="../../img/facebookCaudebec.png" alt="Page d'accueil du Facebook de la ville de Caudebec-lès-Elbeuf"></a>
+                        <a target="_blank" href="https://www.instagram.com/villedecaudebecleselbeuf/"><img class="atelierPhoto2" src="../../img/instaCaudebec.png" alt="Page d'accueil du Instagram de la ville de Caudebec-lès-Elbeuf"></a>
+                        <a target="_blank" href="https://caudebecleselbeuf.fr/"><img class="atelierPhoto2" src="../../img/sitewebCaudebec.png" alt="Site web de la ville de Caudebec-lès-Elbeuf"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- PRODUCTIONS -->
+
+        <div class="main">
+            <div class="container">
+                <div class="text-content">
+                    <p class="titre">PRODUCTIONS</p>
+                    <p>À travers ce rapport de stage que vous pouvez visualiser ci-contre, vous pourrez regarder mes <span>productions graphiques et audiovisuelles</span> que j'ai réalisé durant ce stage.</p>
+                    <p>Mais également le <span>processus</span> par lequel je suis passé afin de les réaliser, ainsi qu'un peu de contexte afin de mieux comprendre les <span>enjeux</span> de chaque situation.</p>
+                    <p style="font-style: italic;">Pour des raisons de confidentialité, certaines parties sont floutées.</p>
+                </div>
+                <div class="content content-pdf">
+                    <iframe 
+                        src="/tool/pdfjs-6.0.227-dist/web/viewer.html?file=/pdf/rapportdestageCaudebec.pdf#toolbar=0"
+                        width="600"
+                        height="849"
+                        style="border:none;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="reseaux">
+            <div class="reseau-item">
+                <a href="https://www.linkedin.com/in/lucas--perrin/"><img class="size" src="../../img/linkedin.png" alt="Logo Linkedin"></a>
+                <span class="info"><a class="style" target="_blank" href="https://www.linkedin.com/in/lucas--perrin/">lucas--perrin</a></span>
+            </div>
+            <div class="reseau-item">
+                <a href="https://www.instagram.com/lucas_prrin/"><img class="size" src="../../img/instagram.png" alt="Logo Instagram"></a>
+                <span class="info"><a class="style" target="_blank" href="https://www.instagram.com/lucas_prrin/">lucas_prrin</a></span>
+            </div>
+            <div class="reseau-item2">
+                <a href="mailto:lucasperrin239@gmail.com"><img class="size" src="../../img/mail.png" alt="Enveloppe"></a>
+                <span class="info2"><a class="style" href="mailto:lucasperrin239@gmail.com">lucasperrin239@gmail.com</a></span>
+            </div>
+            <div class="reseau-item2">
+                <a href="tel:+33781227608"><img class="size" src="../../img/telephone.png" alt="Telephone"></a>
+                <span class="info2"><a class="style" href="tel:+33781227608">07 81 22 76 08</a></span>
+            </div>
+        </div>
+    </body>
+
+    <!-- MENU -->
+    <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+            this.classList.toggle("close-btn");
+            
+            const menu = document.querySelector(".menu");
+            const containerMenu = document.querySelector(".container-menu");
+
+            menu.classList.toggle("open-menu");
+            containerMenu.classList.toggle("open-menu");
+
+            document.body.classList.toggle("no-scroll");
+        });
+    </script>
+
+    <!-- FLÈCHE DOWN -->
+    <script>
+        const fleche = document.querySelector('.flecheDown');
+
+        fleche.addEventListener('click', () => {
+            const mains = [...document.querySelectorAll('.main')];
+            const currentScroll = window.scrollY;
+
+            const next = mains.find(m => m.offsetTop > currentScroll + 10);
+
+            if (next){
+                next.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+
+</html>
