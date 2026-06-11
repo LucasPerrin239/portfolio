@@ -377,6 +377,15 @@ span{
     box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
+.caudebec {
+    background-color: white;
+    background-image: url("../img/logoCaudebec.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 480px){

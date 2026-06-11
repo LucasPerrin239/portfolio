@@ -295,22 +295,31 @@ span{
 
 .photos {
     background: url("../img/photos.JPG");
-    background-size: 100%;
+    background-size: 120%;
+    background-position: center;
+    box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.elbeufbattleground {
+    background: url("../img/elbeufbattleground.jpeg");
+    background-size: 180%;
     background-position: center;
     box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
 .rapstorvideos {
     background: url("../img/rapstorvideos.png");
-    background-size: 100%;
+    background-size: 120%;
     background-position: center;
     box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
 .core {
-    background: url("../img/core.png");
-    background-size: 110%;
+    background-color: white;
+    background-image: url("../img/core.png");
+    background-size: 95%;
     background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 6px 10px 20px rgba(255, 255, 255, 0.6);
 }
 
@@ -330,6 +339,7 @@ span{
   .box{height: 180px; width: 180px; border-radius: 22px;}
   .box:hover{transform: none; transition: none;}
   .photos{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
+  .elbeufbattleground{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .rapstorvideos{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .core{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
 
@@ -352,6 +362,7 @@ span{
   .box{height: 150px; width: 150px; border-radius: 18px;}
   .box:hover{transform: none; transition: none;}
   .photos{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
+  .elbeufbattleground{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .rapstorvideos{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
   .core{box-shadow:3px 3px 20px rgba(255, 255, 255, 0.6);}
 
@@ -372,6 +383,7 @@ span{
   #container{gap: 15px; width: 70%; padding-top: 200px;}
   .box{height: 200px; width: 200px; border-radius: 22px;}
   .photos{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
+  .elbeufbattleground{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .rapstorvideos{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
   .core{box-shadow:4px 4px 20px rgba(255, 255, 255, 0.6);}
 
